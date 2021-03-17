@@ -7,6 +7,13 @@ npm install
 ```
 
 2. Follow along the instructions to complete the code.
+
+This should be the only thing you need to install. make sure it's 6.12
+```
+npm install ganache-cli -g
+```
+
+To find out what's not working look in the tutorial instructions here:
 - Follow [instructions](./Instructions.md) to complete the smart contract code.
 - Follow [setup](./setup.md) to setup all requirements.
 - Follow [dapps](./dapps.md) to complete the DApp code.
