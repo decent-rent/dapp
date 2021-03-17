@@ -19,13 +19,17 @@ import { fetchAllProperties, setProvider } from "~/plugins/utils"
 import { sampleTx } from "~/plugins/walletConnect"
 
 export default {
-  components: {
-    card
-  },
-  async mounted() {
-    // init Metamask
+    components: {
+        card
+    },
+    async mounted() {
+        // init Metamask
+        await setProvider()
+        
+        // fetch all properties
+        const properties = await fetchAllProperties()
+      this.posts = properties
 
-    // fetch all properties
   },
   data() {
     return {
